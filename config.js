@@ -11,8 +11,8 @@ module.exports = {
         APP_NAME: process.env.HEROKU_APP_NAME
     },
     PORT: process.env.PORT || 3000,
-    BASE_URL : "https://upper-romy-inrl-bot.koyeb.app/",
-    REPO: "inrl-official/inrl-bot-md",
+    BASE_URL : "https://mr-kalindu-web.vercel.app",
+    REPO: "MR-KALINDU/G-HOST-MD",
     BGM_URL : process.env.BGM_URL || "null",
     REJECT_CALL : toBool(process.env.REJECT_CALL || 'false'),
     BADWORD_BLOCK : toBool(process.env.BADWORD_BLOCK || 'false'),
@@ -31,14 +31,14 @@ module.exports = {
     CHATBOT : process.env.CHATBOT || "false",//true, pm, group
     REACT : process.env.REACT || "false",//true, command, emoji
     WARNCOUND : process.env.WARNCOUND || 5,
-    BOT_INFO : process.env.BOT_INFO || "INRL-BOT-MD;INRL;https://i.imgur.com/DyLAuEh.jpg",
+    BOT_INFO : process.env.BOT_INFO || "G-HOST-MD;MR-KALINDU;https://telegra.ph/file/775692cf0830748987166.jpg",
     WORKTYPE : process.env.WORKTYPE || "private",
     PREFIX : process.env.PREFIX || "[.,!]",//both  .  and [.] equal, for multi prefix we use [] this
     LANG : process.env.LANG || "en",
     PERSONAL_MESSAGE: process.env.PERSONAL_MESSAGE || "null",
     BOT_PRESENCE : process.env.BOT_PRESENCE || "unavailable",
-    AUDIO_DATA : process.env.AUDIO_DATA || "INRL-BOT-MD;INRL;https://i.imgur.com/DyLAuEh.jpg",
-    STICKER_DATA : process.env.STICKER_DATA || "inrl;inrl",
+    AUDIO_DATA : process.env.AUDIO_DATA || "G-HOST-MD;MR-KALINDUL;https://telegra.ph/file/775692cf0830748987166.jpg",
+    STICKER_DATA : process.env.STICKER_DATA || "G-HOST;MR-KALINDU",
     BRAINSHOP: process.env.BRAINSHOP || '172372,nbjE0YAlyw3cpoMl',
     SUDO : process.env.SUDO || "null",
     RMBG_KEY: process.env.RMBG_KEY,
