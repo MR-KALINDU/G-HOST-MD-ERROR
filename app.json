@@ -1,5 +1,6 @@
 {
-  "name": "inrl@4.1.1",
+  "name": "G-HOST-MD",
+  "logo": "https://telegra.ph/file/775692cf0830748987166.jpg",
   "description": "simple multi featured whatsapp bot",
   "keywords": ["whatsapp"],
   "success_url": "/",
@@ -28,7 +29,7 @@
     "BOT_INFO": {
       "description": "baasic bot configration",
       "required": true,
-      "value": "INRL-BOT-MD;INRL;https://i.imgur.com/DyLAuEh.jpg"
+      "value": "G-HOST-MD;MR-KALINDU;https://telegra.ph/file/775692cf0830748987166.jpg"
     },
     "PREFIX": {
       "description": "bot preifx  ., [.,!], false",
@@ -38,7 +39,7 @@
     "AUDIO_DATA": {
       "description": "audio metadata",
       "required": true,
-      "value": "ᴍᴜꜱɪᴄ;ᴋɪᴅ;https://i.imgur.com/DyLAuEh.jpg"
+      "value": "ᴍᴜꜱɪᴄ;ᴋɪᴅ;https://telegra.ph/file/775692cf0830748987166.jpg"
     },
     "STICKER_DATA": {
       "description": "sticker data",
@@ -63,7 +64,7 @@
     "SUDO": {
       "description": "secounds owners of bot",
       "required": true,
-      "value": "null"
+      "value": "94758179948"
     },
     "AJOIN": {
       "description": "automatically join to all groups",
@@ -73,12 +74,12 @@
     "SAVE_STATUS": {
       "description": "save all status message",
       "required": true,
-      "value": "null"
+      "value": "false"
     },
     "STATUS_VIEW": {
       "description": "status views, values= true,only-view=jid, not-view=jid",
       "required": true,
-      "value": "false"
+      "value": "true"
     },
     "ERROR_MSG": {
       "description": "send error messages to bot number",
