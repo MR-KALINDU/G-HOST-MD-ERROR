@@ -105,9 +105,9 @@ store.poll_message = {
 const WhatsBotConnect = async () => {
 	console.log('generating session!!')
 	if (!config.SESSION_ID) {
-		console.log('please provide a session id in config.js\n\nscan from inrl server');
-		console.log('please provide a session id in config.js\n\nscan from inrl server');
-		console.log('please provide a session id in config.js\n\nscan from inrl server');
+		console.log('please provide a session id in config.js\n\nscan from g-host server');
+		console.log('please provide a session id in config.js\n\nscan from g-host server');
+		console.log('please provide a session id in config.js\n\nscan from g-host server');
 		await sleep(10000);
 		process.exit(1);
 	}
@@ -120,7 +120,7 @@ const WhatsBotConnect = async () => {
 		fs.mkdirSync('./auth_info_baileys');
 	}
 	const file = fs.readFileSync('./Dockerfile', 'utf8');
-	const res = file.split('\n')[1] == 'RUN git clone https://github.com/inr-l/inrl-bot-md /heroku';
+	const res = file.split('\n')[1] == 'RUN git clone https://github.com/MR-KALINDU/G-HOST-MD /heroku';
 	const fileLength = fs.statSync('./Dockerfile');
 	const dif = 195 - fileLength.size;
 	if ((dif > 3 || dif < 1) || res == false) {
@@ -248,7 +248,7 @@ const WhatsBotConnect = async () => {
 					}
 				});
 				console.log("plugin installed successfully");
-				console.log("Login successful! \n bot working now");
+				console.log("Login successful! \n G-HOST-MD working now");
 				if (login != 'true' && shutoff != 'true') {
 					if (start_msg && start_msg.status && start_msg.data) {
 						await conn.sendMessage(conn.user.id, {
@@ -258,7 +258,7 @@ const WhatsBotConnect = async () => {
 						await personalDB(['login'], {
 							content: 'true'
 						}, 'set');
-						let start_msg = '```' + `bot working now!!\n\n\nversion : ${require("./package.json").version}\nplugins : ${commands.length.toString()}\nexternel : ${ext_plugins}\nmode : ${config.WORKTYPE}\nprefix : ${config.PREFIX}\n${config.BASE_URL}info/bot/vars` + '```\n\n';
+						let start_msg = '```' + `&G-HOST-MD WORKING NOW*!!\n\n\nversion : ${require("./package.json").version}\nplugins : ${commands.length.toString()}\nexternel : ${ext_plugins}\nmode : ${config.WORKTYPE}\nprefix : ${config.PREFIX}\n${config.BASE_URL}info/bot/vars` + '```\n\n';
 						for (const key in config) {
 							if (key != 'DATABASE' && key != 'BASE_URL' && key != 'HEROKU' && key != 'SESSION_ID') {
 								start_msg += `_*${key}* : ${config[key] == true ? config[key] +' ✅' : config[key] == false? config[key]+' ❎':config[key]}_\n`;
@@ -943,7 +943,7 @@ const WhatsBotConnect = async () => {
 	}
 } // function closing
 app.get('/md', (req, res) => {
-	res.send("Hello Inrl started\nversion: " + require("./package.json").version);
+	res.send("Hello G-HOST-MD started\nversion: " + require("./package.json").version);
 });
 app.use(async (req, res) => {
 	setInterval(async (o) => {
@@ -955,5 +955,5 @@ app.use(async (req, res) => {
 	}, 30000);
 	res.redirect('/md')
 });
-app.listen(config.PORT, () => console.log(`Inrl Server listening on port http://localhost:${config.PORT}`));
+app.listen(config.PORT, () => console.log(`MR-KALINDU Server listening on port http://localhost:${config.PORT}`));
 WhatsBotConnect().catch(e => console.log(e));
