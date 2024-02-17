@@ -18,10 +18,11 @@
 
 -------
 
-#### Deploy To Heroku 
 
-<a href="https://upper-romy-inrl-bot.koyeb.app/deploy/heroku"><img title="INRL-MD Deploy Heroku" src="https://img.shields.io/badge/DEPLOY HEROKU-h?color=black&style=for-the-badge&logo=heroku"></a>
+#### HEROKU DEPLOY
 
+    NOW DEPLOY TO HEROKU CLICKING THE BUTTON 
+<a href='https://heroku.com/deploy?template=https://github.com/MR-KALINDU/G-HOST-MD' target="_blank"><img alt='DEPLOY' src='https://img.shields.io/badge/-DEPLOY-black?style=for-the-badge&logo=heroku'/></a>
 
 ---
 #### Deploy To Railway
